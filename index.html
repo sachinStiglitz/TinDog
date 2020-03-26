@@ -1,210 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <!-- Bootstrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>TinDog</title>
+  <title>Sachin R Das</title>
 
-  <!-- BootStrap CSS-->
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
-
-  <!-- main CSS -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/84f2041b1f.js" crossorigin="anonymous"></script>
-
-  <!-- bootstrap scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-  <section id="title">
-    <div class="container-fluid">
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">tindog</a>
+  <div class="top-container">
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Quadriga</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
+              <a class="nav-link" href="https://timelessvows.blogspot.in">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Resources
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#profile">Profile</a>
+                <a class="dropdown-item" href="#skills">Skills</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#cont">Contact Me</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta">Download</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Beta</a>
             </li>
           </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
       </nav>
-      <!-- Title -->
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="main-head">Meet new and interesting dogs nearby.</h1>
-          <button type="button" class="btn btn-outline-light btn-lg dwnld-btn"><i class="fab fa-google-play"></i> Download</button>
-          <button type="button" class="btn btn-dark btn-lg dwnld-btn"><i class="fab fa-apple"></i> Download</button>
-        </div>
-        <div class="col-lg-6">
-          <img class="title-ph" src="images/iphone6.png" alt="iphone-mockup">
-        </div>
+    </div>
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'm Sachin.</h1>
+    <h2 class="intro">a web designer.</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img class="mntn" src="images/land.svg" alt="mountain-img">
+  </div>
+  <div class="middle-container">
+    <div class="profile" id="profile">
+      <img class="profile-pic" src="images/profile.jpg" alt="profile-img">
+      <h2>Hi!</h2>
+      <p class="pro-desc">I am a Web Designer and Developer who is a fulltime Officer in the IA. I love programming and Computers.</p>
+    </div>
+
+    <div class="skills" id="skills">
+      <hr>
+      <h2>My Skills.</h2>
+      <div class="skill-row1">
+        <img class="skill1" src="images/computer.png" alt="skill1-img">
+        <h3>Fullstack Developer</h3>
+        <p class="skill1-desc">I am a FullStack web developer who makes beautiful web sites and projects as a hobby. I started my journey with computers when I was 10yrs old.</p>
+      </div>
+      <div class="skill-row2">
+        <img class="skill2" src="images/chillies.png" alt="skill2-img">
+        <h3 class="skill2-hd">CG Artist</h3>
+        <p class="skill2-desc">I also pursue my interests in CG and Design Art. I work with Blender and Gimp.</p>
       </div>
     </div>
-  </section>
-
-
-  <!-- Features -->
-  <section id="features">
-
-    <div class="container">
-      <div class="row rw">
-        <div class="col-lg-4 rele">
-          <i class="fas fa-check-circle featico"></i>
-          <h3 class="feat-tex">Easy to use.</h3>
-          <p class="featp">So easy to use, even your dog could do it.</p>
-        </div>
-        <div class="col-lg-4 rele">
-          <i class="fas fa-bullseye featico"></i>
-          <h3 class="feat-tex">Elite Clientele</h3>
-          <p class="featp">We have all the dogs, the greatest dogs.</p>
-        </div>
-        <div class="col-lg-4 rele">
-          <i class="fas fa-heart featico"></i>
-          <h3 class="feat-tex">Guaranteed to work.</h3>
-          <p class="featp">Find the love of your dog's life or your money back.</p>
-
-        </div>
+    <hr>
+    <div class="contact-me" id="cont">
+      <h2>Contact Me</h2>
+      <h3>Feel the Tingle ?</h3>
+      <p class="contact-desc">If you're interested in hiring me for a freelance job or just for a chilled bear on a beach and good conversation drop me a msg.</p>
+      <div class="btn-div">
+        <a href="mailto:sachinrdas@gmail.com" class="btn">PING ME!</a>
       </div>
     </div>
+  </div>
 
-  </section>
-
-
-  <!-- Testimonials -->
-  <section id="testimonials">
-    <div id="carousel" class="carousel slide" data-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2 class="testi-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-          <img class="testi-img" src="images/dog-img.jpg" alt="dog-profile">
-          <em class="user-n">Pebbles, New York</em>
-        </div>
-        <div class="carousel-item">
-          <h2 class="testi-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-          <img class="testi-img" src="images/lady-img.jpg" alt="lady-profile">
-          <em class="user-n">Beverly, Illinois</em>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon caro-ico" aria-hidden="true"></span>
-
-      </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon caro-ico" aria-hidden="true"></span>
-
-      </a>
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/sachinstiglitz/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/SachinRDas">Twitter</a>
+    <a class="footer-link" href="http://timelessvows.blogspot.com/">Blog</a>
+    <div class="copy-rt">
+      <p class="copyrt">© 2020 Sachin R Das @ Quadriga</p>
     </div>
-  </section>
-
-
-  <!-- Press -->
-  <section id="press">
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
-
-  </section>
-
-
-  <!-- Pricing -->
-  <section id="pricing">
-
-    <div class="pricing-head">
-      <h2>A Plan for Every Dog's Needs</h2>
-      <p>Simple and affordable price plans for your and your dog.</p>
-    </div>
-
-    <div class="container">
-      <div class="card-deck text-center row">
-        <div class="card mb-4 box-shadow col-lg-4  col-md-6 ">
-          <div class="card-header">
-            <h3>Chihuahua</h3>
-            <!-- <h2>Free</h2> -->
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <p class="hidden">hidden</p>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow col-lg-4 col-md-6">
-          <div class="card-header">
-            <h3>Labrador</h3>
-            <!-- <h2>$49 / mo</h2> -->
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$49 <small class="text-muted">/ mo</small></h1>
-            <p class="hidden">hidden</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow col-lg-4 ">
-          <div class="card-header">
-            <h3>Mastiff</h3>
-            <!-- <h2>$99 / mo</h2> -->
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$99 <small class="text-muted">/ mo</small></h1>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button" class="btn btn-lg btn-block btn-dark">Contact us</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section id="cta">
-
-    <h3 class="cta-text">Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button" class="btn btn-outline-light btn-lg dwnld-btn"><i class="fab fa-google-play"></i> Download</button>
-    <button type="button" class="btn btn-dark btn-lg dwnld-btn"><i class="fab fa-apple"></i> Download</button>
-
-  </section>
-
-
-  <!-- Footer -->
-  <footer id="footer">
-    <a href="https://www.twitter.com"><i class="fab footer-ico fa-twitter"></i></a>
-    <a href="https://www.facebook.com"><i class="fab footer-ico fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com"><i class="fab footer-ico fa-instagram"></i></a>
-    <a href="mailto:sachinrdass@protonmail.com"><i class="fas footer-ico fa-envelope"></i></a>
-    <p class="footer-p">© Copyright 2020 Quadriga@TinDog</p>
-  </footer>
-
-
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
